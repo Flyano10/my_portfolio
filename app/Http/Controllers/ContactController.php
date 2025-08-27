@@ -27,7 +27,7 @@ class ContactController extends Controller
 
         Mail::to('raflyjuliano62@gmail.com')->send(new ContactNotification($contact));
 
-        return redirect('/')->with('success', 'Pesan berhasil dikirim!');
+        return redirect('/#contact')->with('success', 'Pesan berhasil dikirim! Terima kasih telah menghubungi saya.');
     }
 
     public function destroy($id)

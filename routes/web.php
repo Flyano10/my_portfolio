@@ -18,6 +18,11 @@ Route::get('/tentang', [HomeController::class, 'about'])->name('about');
 Route::get('/blog', [PostController::class, 'index'])->name('blog.index');       // ✅ Tambahkan ini
 Route::get('/blog/{post}', [PostController::class, 'show'])->name('blog.show');  // ✅ Tambahkan ini
 
+// Halaman Kontak
+Route::get('/contact', function () {
+    return view('contact');
+})->name('contact');
+
 // Form kontak
 Route::post('/kontak', [ContactController::class, 'store'])->name('kontak.store');
 

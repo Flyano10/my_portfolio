@@ -20,16 +20,17 @@
             <div class="space-y-8" data-aos="fade-right">
                 <div class="relative">
                     <div class="absolute inset-0 bg-gradient-to-r from-blue-400 to-blue-600 rounded-2xl blur-xl opacity-20"></div>
-                    <img src="{{ asset('images/rafly.jpg.jpeg') }}" alt="Rafly Juliano" class="relative w-80 h-80 mx-auto rounded-2xl shadow-2xl object-cover">
+                    <img src="{{ asset('images/rafly.jpg.jpeg') }}" alt="Rafly Juliano" class="relative w-80 h-80 mx-auto rounded-2xl shadow-2xl object-cover" loading="lazy">
                 </div>
                 
                 <div class="text-center lg:text-left">
                     <h2 class="text-3xl font-bold text-blue-900 mb-2">Rafly Juliano</h2>
                     <p class="text-xl text-blue-600 mb-4">Web Developer</p>
                     <div class="flex justify-center lg:justify-start gap-4">
-                        <a href="https://github.com/raflyjuliano" target="_blank" class="text-blue-600 hover:text-black text-2xl transition"><i class="fab fa-github"></i></a>
-                        <a href="https://linkedin.com/in/raflyjuliano" target="_blank" class="text-blue-600 hover:text-[#0A66C2] text-2xl transition"><i class="fab fa-linkedin"></i></a>
-                        <a href="mailto:raflyjuliano62@gmail.com" class="text-blue-600 hover:text-[#EA4335] text-2xl transition"><i class="fas fa-envelope"></i></a>
+                        <a href="https://github.com/Flyano10" target="_blank" class="text-blue-600 hover:text-black text-2xl transition hover:scale-110"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/muhammad-rafly-juliano-037688287" target="_blank" class="text-blue-600 hover:text-[#0A66C2] text-2xl transition hover:scale-110"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/liianno_?igsh=d2F4bDZxaGMwdDY2" target="_blank" class="text-blue-600 hover:text-[#E4405F] text-2xl transition hover:scale-110"><i class="fab fa-instagram"></i></a>
+                        <a href="mailto:raflyjuliano62@gmail.com" class="text-blue-600 hover:text-[#EA4335] text-2xl transition hover:scale-110"><i class="fas fa-envelope"></i></a>
                     </div>
                 </div>
             </div>
@@ -100,7 +101,7 @@
             <a href="#contact" class="bg-white text-blue-600 hover:bg-blue-50 px-8 py-3 rounded-full font-semibold shadow-lg hover:shadow-xl transition-all duration-200">
                 Get In Touch
             </a>
-            <a href="{{ asset('cv/CV-RaflyJuliano..pdf') }}" download class="border-2 border-white text-white hover:bg-white hover:text-blue-600 px-8 py-3 rounded-full font-semibold transition-all duration-200">
+            <a href="{{ asset('cv/CV-Raflyjuliano..pdf') }}" download class="border-2 border-white text-white hover:bg-white hover:text-blue-600 px-8 py-3 rounded-full font-semibold transition-all duration-200">
                 Download CV
             </a>
         </div>
@@ -109,6 +110,8 @@
 @endsection
 
 @section('title', 'About Me - Rafly Juliano')
-@section('meta_description', 'About Rafly Juliano, a passionate web developer ready to contribute to meaningful development projects.')
+@section('meta_description', 'About Rafly Juliano, a passionate web developer with expertise in Laravel, PHP, and modern web technologies. Ready to contribute to meaningful development projects.')
+@section('meta_keywords', 'about rafly juliano, web developer, laravel developer, php developer, indonesia')
+@section('meta_author', 'Rafly Juliano')
 @section('og_title', 'About Me - Rafly Juliano')
-@section('og_description', 'About Rafly Juliano, a passionate web developer ready to contribute to meaningful development projects.')
+@section('og_description', 'About Rafly Juliano, a passionate web developer with expertise in Laravel, PHP, and modern web technologies. Ready to contribute to meaningful development projects.')

@@ -301,7 +301,7 @@
             Check out my projects to see these skills in action. 
             Let's discuss how I can contribute to your next project!
         </p>
-        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <div class="flex flex-col sm:flex-row gap-4 justify-center mb-8">
             <a href="#projects" class="bg-white text-blue-600 hover:bg-blue-50 px-8 py-3 rounded-full font-semibold shadow-lg hover:shadow-xl transition-all duration-200">
                 View Projects
             </a>
@@ -309,14 +309,36 @@
                 Get In Touch
             </a>
         </div>
+        
+        <!-- Social Media Links -->
+        <div class="flex justify-center gap-6 mt-8">
+            <a href="https://github.com/Flyano10" target="_blank" 
+               class="bg-white/10 hover:bg-white/20 backdrop-blur-sm rounded-full p-3 transition-all duration-300 hover:scale-110">
+                <i class="fab fa-github text-2xl text-white"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/muhammad-rafly-juliano-037688287" target="_blank" 
+               class="bg-white/10 hover:bg-white/20 backdrop-blur-sm rounded-full p-3 transition-all duration-300 hover:scale-110">
+                <i class="fab fa-linkedin text-2xl text-white"></i>
+            </a>
+            <a href="https://www.instagram.com/liianno_?igsh=d2F4bDZxaGMwdDY2" target="_blank" 
+               class="bg-white/10 hover:bg-white/20 backdrop-blur-sm rounded-full p-3 transition-all duration-300 hover:scale-110">
+                <i class="fab fa-instagram text-2xl text-white"></i>
+            </a>
+            <a href="mailto:raflyjuliano62@gmail.com" 
+               class="bg-white/10 hover:bg-white/20 backdrop-blur-sm rounded-full p-3 transition-all duration-300 hover:scale-110">
+                <i class="fas fa-envelope text-2xl text-white"></i>
+            </a>
+        </div>
             </div>
 </section>
 @endsection
 
 @section('title', 'Skills & Expertise - Rafly Juliano')
-@section('meta_description', 'Technical skills and expertise of Rafly Juliano in web development, including Laravel, PHP, MySQL, and modern frontend technologies.')
+@section('meta_description', 'Technical skills and expertise of Rafly Juliano in web development, including Laravel, PHP, MySQL, Tailwind CSS, and modern frontend technologies.')
+@section('meta_keywords', 'skills, laravel, php, mysql, tailwind css, web development, programming, indonesia')
+@section('meta_author', 'Rafly Juliano')
 @section('og_title', 'Skills & Expertise - Rafly Juliano')
-@section('og_description', 'Technical skills and expertise of Rafly Juliano in web development, including Laravel, PHP, MySQL, and modern frontend technologies.')
+@section('og_description', 'Technical skills and expertise of Rafly Juliano in web development, including Laravel, PHP, MySQL, Tailwind CSS, and modern frontend technologies.')
 
             <div class="w-full bg-pink-100 rounded-full h-2 mb-2">
 
@@ -472,7 +494,7 @@
 
             </ul>
 
-    </div>
+        </div>
 
         <!-- VS Code -->
 
@@ -848,7 +870,7 @@
 
     </div>
 
-</div>
+            </div>
 
 @endsection
 

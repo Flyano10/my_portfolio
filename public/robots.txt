@@ -1,2 +1,18 @@
 User-agent: *
-Disallow:
+Allow: /
+
+# Sitemap
+Sitemap: https://raflyjuliano.com/sitemap.xml
+
+# Disallow admin areas
+Disallow: /admin/
+Disallow: /dashboard/
+Disallow: /login
+Disallow: /register
+
+# Allow important pages
+Allow: /
+Allow: /tentang
+Allow: /skill
+Allow: /blog
+Allow: /#contact

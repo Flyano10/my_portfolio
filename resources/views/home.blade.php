@@ -86,7 +86,7 @@
                 <p class="text-base sm:text-lg text-blue-800 mb-6" data-aos="fade-right" data-aos-delay="500">Membangun website modern, cepat, dan responsif dengan Laravel & Tailwind CSS.</p>
                 <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start mb-6 md:mb-0">
                     <a href="#projects" class="bg-blue-600 hover:bg-blue-700 hover:scale-105 hover:shadow-lg transition-transform duration-200 text-white px-6 py-3 rounded-full font-semibold shadow">Lihat Project</a>
-                    <a href="{{ asset('cv/CV-RaflyJuliano..pdf') }}" download class="border-2 border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white hover:scale-105 hover:shadow-lg transition-transform duration-200 px-6 py-3 rounded-full font-semibold">Download CV</a>
+                    <a href="{{ asset('cv/CV-Raflyjuliano..pdf') }}" download class="border-2 border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white hover:scale-105 hover:shadow-lg transition-transform duration-200 px-6 py-3 rounded-full font-semibold">Download CV</a>
                 </div>
             </div>
         </div>

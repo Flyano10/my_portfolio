@@ -19,10 +19,24 @@
     <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
 
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous">
+    
+    <!-- Preload critical resources -->
+    <link rel="preload" href="{{ asset('images/rafly.jpg.jpeg') }}" as="image">
+    <link rel="dns-prefetch" href="//fonts.bunny.net">
+    <link rel="dns-prefetch" href="//cdnjs.cloudflare.com">
 
     <!-- Scripts -->
     @vite(['resources/css/app.css', 'resources/js/app.js'])
+    
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'GA_MEASUREMENT_ID');
+    </script>
 </head>
 
 <body class="bg-gray-50 text-gray-900 font-sans antialiased">
@@ -54,9 +68,6 @@
                             <button type="submit" class="text-gray-700 hover:text-red-600">Logout</button>
                         </form>
                     @endauth
-                    @guest
-                        <a href="{{ route('login') }}" class="text-gray-700 hover:text-indigo-600">Login</a>
-                    @endguest
                 </div>
             </div>
             <!-- Mobile Menu -->
@@ -74,9 +85,6 @@
                             <button type="submit" class="text-gray-700 hover:text-red-600">Logout</button>
                         </form>
                     @endauth
-                    @guest
-                        <a href="{{ route('login') }}" class="text-gray-700 hover:text-indigo-600">Login</a>
-                    @endguest
                 </div>
             </div>
         </nav>
