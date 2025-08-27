@@ -1,66 +1,122 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# Portfolio Website - Muhammad Rafly Juliano
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+A modern, responsive portfolio website built with Laravel and Tailwind CSS.
 
-## About Laravel
+## 🌟 Features
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+- **Modern Design**: Clean and professional design with smooth animations
+- **Responsive**: Fully responsive across all devices
+- **SEO Optimized**: Meta tags, sitemap, and robots.txt for better search engine visibility
+- **Performance**: Optimized with lazy loading, preload, and DNS prefetch
+- **Security**: Security headers and best practices implemented
+- **Contact Form**: Functional contact form with email notifications
+- **Social Media Integration**: Links to GitHub, LinkedIn, Instagram, and Email
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## 🛠️ Tech Stack
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+- **Backend**: Laravel 11
+- **Frontend**: Tailwind CSS, Alpine.js
+- **Animations**: AOS (Animate On Scroll)
+- **Icons**: Font Awesome
+- **Deployment**: Custom deployment script with optimization
 
-## Learning Laravel
+## 📁 Project Structure
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+```
+portfolio/
+├── app/
+│   ├── Console/Commands/GenerateSitemap.php
+│   ├── Http/Controllers/ContactController.php
+│   └── Http/Middleware/SecurityHeaders.php
+├── resources/views/
+│   ├── layouts/app.blade.php
+│   ├── home.blade.php
+│   ├── about.blade.php
+│   ├── skill.blade.php
+│   └── errors/
+│       ├── 404.blade.php
+│       └── 500.blade.php
+├── public/
+│   ├── cv/
+│   ├── images/
+│   ├── robots.txt
+│   └── sitemap.xml
+├── deploy.sh
+└── DEPLOYMENT_CHECKLIST.md
+```
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+## 🚀 Getting Started
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/Flyano10/my_portfolio.git
+   cd my_portfolio
+   ```
 
-## Laravel Sponsors
+2. **Install dependencies**
+   ```bash
+   composer install
+   npm install
+   ```
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+3. **Environment setup**
+   ```bash
+   cp .env.example .env
+   php artisan key:generate
+   ```
 
-### Premium Partners
+4. **Configure database** (if needed)
+   ```bash
+   php artisan migrate
+   ```
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
+5. **Generate sitemap**
+   ```bash
+   php artisan sitemap:generate
+   ```
 
-## Contributing
+6. **Start development server**
+   ```bash
+   php artisan serve
+   ```
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+## 📧 Contact Form Setup
 
-## Code of Conduct
+The contact form uses Laravel's mail system. Configure your mail settings in `.env`:
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+```env
+MAIL_MAILER=smtp
+MAIL_HOST=your-smtp-host
+MAIL_PORT=587
+MAIL_USERNAME=your-email
+MAIL_PASSWORD=your-password
+MAIL_ENCRYPTION=tls
+MAIL_FROM_ADDRESS=your-email
+MAIL_FROM_NAME="${APP_NAME}"
+```
 
-## Security Vulnerabilities
+## 🚀 Deployment
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+Use the provided deployment script:
 
-## License
+```bash
+chmod +x deploy.sh
+./deploy.sh
+```
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+Or follow the manual steps in `DEPLOYMENT_CHECKLIST.md`.
+
+## 📱 Social Media Links
+
+- **GitHub**: [@Flyano10](https://github.com/Flyano10)
+- **LinkedIn**: [Muhammad Rafly Juliano](https://www.linkedin.com/in/muhammad-rafly-juliano-037688287)
+- **Instagram**: [@liianno_](https://www.instagram.com/liianno_)
+- **Email**: raflyjuliano62@gmail.com
+
+## 📄 License
+
+This project is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+---
+
+**Built with ❤️ by Muhammad Rafly Juliano**
